@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+
+
+<GridPane alignment="CENTER" hgap="10.0" vgap="10.0"
+    xmlns:fx="http://javafx.com/fxml"
+    fx:controller="aplicaciongraficacliente.FXMLTablaClienteController">
+    
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+        <Text text="Nombre Cliente:"  GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="nombreCliente" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    
+    <Text text="Direccion:"  GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="direccionCliente" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    
+    <Text text="RFC:"  GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="rfcCliente" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    
+    <Text text="Boton--:"  GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Button text="Enviar" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction=""/>
+    <Label fx:id="etiquetaObjetivo"  GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+    
+    
+    
+    
+    
+    <!--
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+    <Label style="-fx-font: NORMAL 20 Tahoma;" text="Address Book"
+        GridPane.columnIndex="0" GridPane.rowIndex="0">
+    </Label>
+    <TableView fx:id="tablaCliente" GridPane.columnIndex="0" 
+        GridPane.rowIndex="1">
+        <columns>
+            <TableColumn text="Nombre">
+                    <cellValueFactory> <PropertyValueFactory property="clienteNombre" />
+                    </cellValueFactory>
+            </TableColumn>
+            
+            <TableColumn text="Direccion">
+                <cellValueFactory> <PropertyValueFactory property="clienteDireccion" />
+                    </cellValueFactory>
+            </TableColumn>
+            
+            <TableColumn text="RFC">
+                <cellValueFactory> <PropertyValueFactory property="clienteRFC" />
+                    </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    -->
+</GridPane>
+
