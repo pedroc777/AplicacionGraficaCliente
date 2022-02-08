@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+
+
+
+<GridPane fx:controller="aplicaciongraficacliente.FXMLDocumentController"
+xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+<padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+    <Text text="Nombre Cliente:"  GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="nombreCliente" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    
+    <Text text="Direccion:"  GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="direccionCliente" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    
+    <Text text="RFC:"  GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="rfcCliente" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    
+    <Text text="Boton--:"  GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Button text="Enviar" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#handleButtonAction"/>
+    <Label fx:id="etiquetaObjetivo"  GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2"/> 
+</GridPane>
+
+
